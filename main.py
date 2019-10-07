@@ -10,6 +10,8 @@ def drawLinePlot(start, end, activationFunction):
         outputs.append(activationFunction(x))
     return inputs, outputs
 
+x, y = drawLinePlot(-3, 3, activation.linear)
+plt.plot(x, y, label='Linear')
 x, y = drawLinePlot(-3, 3, activation.sigmoid)
 plt.plot(x, y, label='Sigmoid')
 x, y = drawLinePlot(-3, 3, activation.leakyRelu)

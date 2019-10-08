@@ -18,7 +18,7 @@ def relu(x):
 def leakyRelu(x):
     if x >= 0:
         return x
-    return 0.01
+    return x * 0.01
 
 def swish(x):
     return x * sigmoid(x)

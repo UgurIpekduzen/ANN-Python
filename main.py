@@ -23,7 +23,7 @@ plt.plot(x, y, label='ReLU')
 x, y = drawLinePlot(-3, 3, activation.swish)
 plt.plot(x, y, label='Swish')
 plt.plot([-3, -2, -1, 0, 1, 2, 3], activation.softmax([-3, -2, -1, 0, 1, 2, 3]), label='Softmax')
-
+plt.axvline()
 plt.xlabel("Inputs")
 plt.ylabel("Outputs")
 plt.title("Activation Functions")
